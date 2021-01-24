@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- animate  library -->
+  <link rel="stylesheet" href="./plugins/animation.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+ <!-- slick -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!-- <link rel="stylesheet" href="./plugins/slick.css"> -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- ....................preload .........................................................-->
+  <div class="preload">
+        <div class="text-center middle">
+            <span class="loader">
+              <span class="loader-inner"></span>
+            </span>
+          </div>
+    </div>
+  <!-- ----------------------loading div-------------------------------- -->
+  
+  <!-- ------------------------------header------------------------ -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="Header Logo">
+          </a>
+        </div>
+        <div class="main-menu d-none d-lg-block ">
+          <nav class="main-nav d-flex justify-content-center">
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li class="dropdown-li">
+                <a href="#">DropDown <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-list list-unstyled">
+                  <li>
+                    <a href="#">Page 1</a>
+                  </li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right-side ">
+          <ul class="list-unstyled">
+            
+            <li id="menuS-btn">
+              <a href="#mobileMenu" class="menu-btn toolbar-btn d-inline-block d-lg-none">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+            <li class="cart-wrap" id="cart-wrap">
+              <a href="#cart" class="cart-btn toolbar-btn">
+                <div class="cart-count_area">
+                  <span class="item-count">03</span>
+                  <i class="fa fa-shopping-bag"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#search" class="search-btn toolbar-btn">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <li id="menu-btn">
+              <a href="#menu-bigScreen" class="menu-btn toolbar-btn d-lg-inline-block d-none ">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- ===================cart============================ -->
+    <div class="cart " id="cart">
+      <div class="cart__inner">
+        <a href="#" class="close-btn " id="close-cart"><i class="fa fa-times"></i></a>
+        <div class="cart__content">
+          <div class="cart__heading">
+            <h4>Shopping Cart</h4>
+          </div>
+          <ul class="cart_list list-unstyled">
+            <li class="cart__product">
+              <a class="product-item_remove" href="javascript:void(0)"><i class="fa fa-times"></i></a>
+              <div class="product-item_img">
+                <img src="./img/products/1-1.jpg" alt="Product Image">
+              </div>
+              <div class="product-item_content">
+                <a class="product-item_title" href="#">T-Shirt Branding Co.</a>
+                <span class="product-item_quantity d-block">1 x $145.80</span>
+              </div>
+            </li>
+
+            <li class="cart__product">
+              <a class="product-item_remove" href="javascript:void(0)"><i class="fa fa-times"></i></a>
+              <div class="product-item_img">
+                <img src="./img/products/2-1.jpg" alt="Product Image">
+              </div>
+              <div class="product-item_content">
+                <a class="product-item_title" href="#">T-Shirt Branding Co.</a>
+                <span class="product-item_quantity d-block">1 x $150.80</span>
+              </div>
+            </li>
+            <li class="cart__product">
+              <a class="product-item_remove" href="javascript:void(0)"><i class="fa fa-times"></i></a>
+              <div class="product-item_img">
+                <img src="./img/products/3-1.jpg" alt="Product Image">
+              </div>
+              <div class="product-item_content">
+                <a class="product-item_title" href="#">T-Shirt Branding Co.</a>
+                <span class="product-item_quantity d-block">1 x $165.80</span>
+              </div>
+            </li>
+          </ul>
+          <div class="cart-item_total d-flex justify-content-between mb-5">
+            <span>Subtotal</span>
+            <span class="ammount">$462.4‬0</span>
+          </div>
+          <div class="cart__btn btn ">
+            <a href="#" class="text-light">Cart</a>
+          </div>
+          <div class="cart__btn btn ">
+            <a href="checkout.html" class="text-light">Checkout</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- .....................search................... -->
+  <div class="search" id="search">
+    <div class="close-btn close-search" id="close-search"><i class="fa fa-times"></i></div>
+    <div class="search__inner">
+      <div class="search__box w-100">
+        <form action="#" class="w-75">
+          <div class=" d-flex justify-content-between">
+            <input type="search" name="search-box" class="form-input d-inline-block" id="searchBox"
+              placeholder="search for item...">
+            <a href="#" class="text-light search-icon"><i class="fa fa-search"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ..................menu.................. -->
+  <div class="menu-bigScreen" id="menu-bigScreen">
+    <div class="menu-inner">
+      <a href="#" class="close-btn menu-close"><i class="fa fa-times "></i></a>
+      <div class="menu_logo text-center mt-4 ">
+        <a href="#">
+          <img src="./img/logo.png" class="" alt="Logo">
+        </a>
+      </div>
+      <div class="short-desc">
+        <p class="text-center">
+          we are computer science student in Mansoura Uversity,
+          Egypt......
+        </p>
+      </div>
+      <div class="box first-child">
+        <span class="box_title">Currency</span>
+        <ul class="box_list ">
+          <li><a href="javascript:void(0)">EGP</a></li>
+          <span> __ </span>
+          <li class="active"><a href="javascript:void(0)">USD</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <span class="box_title">Language</span>
+        <ul class="box_list">
+          <li class="active"><a href="javascript:void(0)">English</a></li>
+          <span> __ </span>
+          <li><a href="javascript:void(0)">Arabic</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <span class="box_title">My Account</span>
+        <ul class="box_list">
+          <li><a href="#">Register</a></li>
+          <span> __ </span>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <div class="inner-social_link">
+        <div>
+          <ul class="social_list">
+            <li class="facebook">
+              <a href="https://www.facebook.com" data-toggle="tooltip" target="_blank" title=""
+                data-original-title="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com" data-toggle="tooltip" target="_blank" title=""
+                data-original-title="Twitter">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="youtube">
+              <a href="https://www.youtube.com" data-toggle="tooltip" target="_blank" title=""
+                data-original-title="Youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="google-plus">
+              <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title=""
+                data-original-title="Google Plus">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+            <li class="instagram">
+              <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank" title=""
+                data-original-title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ...........mobile menu....................... -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="close-btn  menuS-close"><i class="fa fa-times "></i></a>
+    <div class="mobile-menu-inner">
+      <!-- <div class="container"> -->
+       
+        <div class="menu_logo text-center mt-4">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="Header Logo">
+          </a>
+        </div>
+        <ul class="menueS-list">
+          <li class="menueS-item"><a href="#">Home</a></li>
+          <li class="menueS-item"><a href="#">About Us</a></li>
+          <li class="menueS-item"><a href="#">Shop</a></li>
+          <li class="menueS-item">
+            <a href="#" class="menu-expand" id="menu-expand">
+              DropDown
+            <i class="fa fa-plus"></i>
+
+            </a>
+            <ul class="expand">
+              <li class="">
+                <a href="#">
+                  Page 1
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  Page 2
+                </a>
+              </li>
+              <li class="">
+                <a href="#">
+                  Page 3
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+          
+         
+        </ul>
+        <!-- second ul -->
+        <ul class="user-select">
+          <li class="menueS-item user-select-item active">
+            <a href="#">
+              Currency
+            <i class="fa fa-plus"></i>
+
+            </a>
+            <ul class="">
+              <li class=""><a href="#"> EGP E£</a></li>
+              <li class=""><a href="#">USD $</a></li>
+            </ul>
+          </li>
+          <li class="menueS-item user-select-item">
+            <a href="#">
+              User Setting
+            <i class="fa fa-plus"></i>
+
+            </a>
+            <ul class="">
+              <li class=""><a href="#"> My Account</a></li>
+              <li class=""><a href="#"> Login | Register</a></li>
+            </ul>
+          </li>
+          <li class="menueS-item user-select-item">
+            <a href="#">
+              Language
+            <i class="fa fa-plus"></i>
+
+            </a>
+            <ul class="">
+              <li class=""><a href="#">Arabic</a></li>
+              <li class=""><a href="#">English</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        
+       
+    </div>
+  </div>
+  <!-- -------------------End Header------------------------ -->
+
+  <!-- ------------------slider--------------------------- -->
+  <section class="slider">
+    <div class="single-item w-100 margin-auto ">
+      <div class="items p-3 slider-animation bg-1">
+        <div class="loading"></div>
+        <div class="row">
+          <div class="col">
+            <!-- <img src="./img/1-2.jpg" class="slider__img" alt=""> -->
+            <div class="slider__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <span>Exclusive Offer -20% Off This Week</span>
+                    <h2>Accessories <br> Explore Trending</h2>
+                    <p class="short-desc">
+                      Aliquam error eos cumque aut repellat quasi accusantium
+                      inventore necessitatibus. Vel quisquam distinctio in inventore
+                      dolorum.
+                    </p>
+                    <div class="slider-btn  btn">
+                      <a href="#" class="text-light rounded">shop now</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="items p-3 slider-animation bg-2">
+        <div class="loading"></div>
+        <div class="row">
+          <div class="col">
+            <!-- <img src="./img/1-1 (1).jpg" class="slider__img" alt=""> -->
+            <div class="slider__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <span >Exclusive Offer -20% Off This Week</span>
+                    <h2>Accessories <br> Explore Trending</h2>
+                    <p class="short-desc">
+                      Aliquam error eos cumque aut repellat quasi accusantium
+                      inventore necessitatibus. Vel quisquam distinctio in inventore
+                      dolorum.
+                    </p>
+                    <div class="slider-btn  btn">
+                      <a href="#" class="text-light rounded">shop now</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--=========================== service section ===================-->
+  <section class="service">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-4">
+          <div class="service-item">
+            <div class="service-content">
+              <h4>Free Shipping</h4>
+              <p>Free shipping on all order</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4">
+          <div class="service-item">
+            <div class="service-content">
+              <h4>Money Return</h4>
+              <p>30 days for free return</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4">
+          <div class="service-item service-last-item ">
+            <div class="service-content">
+              <h4>Online Support</h4>
+              <p>Support 24 hours a day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- .........................designer......................... -->
+  <section class="designer">
+    <div class="container">
+      <div class="row mx-auto">
+        <div class="col-md-4 col-6  mx-auto">
+          <div class="designer-item img-animation">
+            <div class="designer-img">
+              <a href="javascrip:void(0)">
+                <img src="./img/1-1 (2).jpg" alt="designer">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6  mx-auto">
+          <div class="designer-item img-animation">
+            <div class="designer-img">
+              <a href="javascrip:void(0)">
+                <img src="./img/1-2 (1).jpg" alt="designer">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-6  mx-auto">
+          <div class="designer-item img-animation">
+            <div class="designer-img">
+              <a href="javascrip:void(0)">
+                <img src="./img/1-3.jpg" alt="designer">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--.................... product........... -->
+  <section class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main-title">
+            <h3>New Product</h3>
+            <div class="product-arrow--container"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="product__slider ">
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/1-2 (2).jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/2-1.jpg" alt=" Product Image" />
+                  </a>
+
+                  <span class="shape">Best Seller</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star"></i> </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/2-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/2-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape-2">Hot</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/3-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/3-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape ">Best seller</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/4-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/4-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape-2">Hot</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/5-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/5-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape-2">Hot</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/6-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape-2">Hot</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/6-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape ">Best seller</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/7-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/7-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape-2">Hot</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="inner-product">
+                <div class="product__img">
+                  <a href="#">
+                    <img class="main__img" src="./img/products/8-1.jpg" alt=" Product Image" />
+                    <img class="secondary__img" src="./img/products/8-2.jpg" alt=" Product Image" />
+                  </a>
+                  <span class="shape ">Best seller</span>
+                  <div class="add-behaviur">
+                    <ul>
+                      <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                            class="fa fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product__content">
+
+                  <h3 class="product__name">
+                    <a href="#">Quibusdam ratione</a>
+                  </h3>
+                  <div class="price-box">
+                    <span class="old-price">$50.99</span>
+                    <span class="new-price">$46.91</span>
+                  </div>
+                  <div class="star-box">
+                    <ul>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li> <i class="fa fa-star-half-alt"></i> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ....................designer2........................... -->
+  <section class="designer-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="designer-item img-animation">
+            <div class="designer-img">
+              <a href="javascrip:void(0)">
+                <img src="./img/1-4.jpg" class="w-100" alt="designer">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="designer-item img-animation">
+            <div class="designer-img">
+              <a href="javascrip:void(0)">
+                <img src="./img/1-5.jpg" class="w-100 " alt="designer">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .......................product-2................ -->
+  <section class="product-tab">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="main-title">
+            <h3>All Products</h3>
+            <div class="product-tab">
+              <ul class="product-menu">
+                <li>
+                  <a class="tab-bag  tab" data-toggle="tab" href="#bag"><span>Bag</span></a>
+                </li>
+                <li>
+                  <a class="tab-plaid-shirts tab active" data-toggle="tab" href="#plaid-shirts"><span>Plaid
+                      Shirts</span></a>
+                </li>
+                <li>
+                  <a class="tab-shoes tab" data-toggle="tab" href="#shoes"><span>Shoes</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ..............product tap content......................... -->
+      <div class="row">
+        <div class="col">
+          <div class="product-tab-content">
+            <!-- .......................bag....................... -->
+            <div id="bag" class="tab-inner bag">
+              <div class="product__slider ">
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/7-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/1-2 (2).jpg" alt=" Product Image" />
+                      </a>
+
+                      <span class="shape">Best Seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star"></i> </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/7-2.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/2-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/3-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/3-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/4-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/4-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/5-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/5-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/7-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/7-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/8-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/8-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- .................................shirts......................... -->
+            <div id="plaid-shirts" class="tab-inner active shirts">
+              <div class="product__slider ">
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/1-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/2-2.jpg" alt=" Product Image" />
+                      </a>
+
+                      <span class="shape">Best Seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star"></i> </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/2-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/2-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/3-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/3-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/4-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/4-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/5-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/5-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/7-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/7-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/8-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/8-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- ............shoes.......................... -->
+            <div id="shoes" class="tab-inner shoes">
+              <div class="product__slider ">
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/8-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/3-1.jpg" alt=" Product Image" />
+                      </a>
+
+                      <span class="shape">Best Seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star"></i> </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/8-2.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/2-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/shoes-4.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/3-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/4-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/4-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/5-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/5-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/6-1.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/7-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/7-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape ">Best seller</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="inner-product">
+                    <div class="product__img">
+                      <a href="#">
+                        <img class="main__img" src="./img/products/8-1.jpg" alt=" Product Image" />
+                        <img class="secondary__img" src="./img/products/8-2.jpg" alt=" Product Image" />
+                      </a>
+                      <span class="shape-2">Hot</span>
+                      <div class="add-behaviur">
+                        <ul>
+                          <li class="quick-view-btn" data-toggle="modal" data-target="#Modal">
+                            <a href="javascript:void(0)" data-toggle="tooltip" title="Quick View"><i
+                                class="fa fa-search"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To Wishlist"><i class="fa fa-heart"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" data-toggle="tooltip" title="Add To cart"><i class="fa fa-shopping-bag"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="product__content">
+
+                      <h3 class="product__name">
+                        <a href="#">Quibusdam ratione</a>
+                      </h3>
+                      <div class="price-box">
+                        <span class="old-price">$50.99</span>
+                        <span class="new-price">$46.91</span>
+                      </div>
+                      <div class="star-box">
+                        <ul>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li><i class="fa fa-star"></i></li>
+                          <li> <i class="fa fa-star-half-alt"></i> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ........................shop now................. -->
+  <section class="shop-now">
+    <!-- <div class="shop_img"></div> -->
+    <div class="shop_content">
+      <h2>Get exclusive Products.</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+      </p>
+      <div class="contact-us">
+        <a href="callto://+123123321345">(+123) 123 321 345</a>
+      </div>
+      <div class="shop-btn">
+        <a class=" transparent-btn" href="#">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- ..................instagram............................ -->
+  <section class="instagram">
+    <div class="container">
+      <div class="instagram_heading text-center">
+        <h2>Instagram Feed </h2>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical </p>
+      </div>
+      <div class="col">
+        <div class="row-lg-12">
+          <div class="instagram__slider">
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/1.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/2.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/3.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/4.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/5.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/5.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/6.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+            <div class="instagram-item">
+              <div class="instagram-img  img-animation">
+                <a href="javascript:void(0)">
+                  <img src="./img/instagram/7.jpg" alt=" Instagram Image" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ................footer....................... -->
+  <div class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="footer-subscripe">
+              <div class="footer-logo">
+                <a href="javascript:void(0)">
+                  <img src="./img/logo.png" alt="Logo">
+                </a>
+              </div>
+              <p class="short-desc">
+                Subscribe to our newsleter, Enter your emil address
+              </p>
+              <div class="footer-form">
+                <form>
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control rounded-0" placeholder="Enter Your Email"
+                      aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <button class="btn footer-form__btn  rounded-0" type="button" id="button-addon1"><i
+                        class="far fa-envelope"></i></button>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 mt-md-5">
+            <div class="row footer-links_wrap">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="footer-links_title">
+                  <h4>Shopping</h4>
+                </div>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="javascript:void(0)">Product</a></li>
+                    <li><a href="javascript:void(0)">My Cart</a></li>
+                    <li><a href="javascript:void(0)">Wishlist</a></li>
+                    <li><a href="javascript:void(0)">Cart</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="footer-links_title">
+                  <h4>Account</h4>
+                </div>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="javascript:void(0)">Login</a></li>
+                    <li><a href="javascript:void(0)">Register</a></li>
+                    <li><a href="javascript:void(0)">Help</a></li>
+                    <li><a href="javascript:void(0)">Support</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="footer-links_title">
+                  <h4>Categories</h4>
+                </div>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="javascript:void(0)">Men</a></li>
+                    <li><a href="javascript:void(0)">Women</a></li>
+                    <li><a href="javascript:void(0)">Jeans</a></li>
+                    <li><a href="javascript:void(0)">Shoes</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-md-0 mb-3 text-md-left text-center">
+            <div class="copyright">
+              <span>Copyright ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                <a href="javascript:void(0)">Glide.</a> All rights
+                reserved to Reham &hearts;</span>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-left text-center">
+            <div class="payment">
+              <img src="./img/1.png" alt=" Payment Method">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ........................................scroll to top ...................... -->
+  <a href="#" class="scroll-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- .......................................modal ................................ -->
+  
+  
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fa fa-times"></i></span>
+        </button>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-6">
+              <div class="slider-for">
+                <div class="slide-container"><img src="./img/products/1-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/2-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/3-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/4-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/5-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/6-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/7-1.jpg" alt=""></div>
+                <div class="slide-container"><img src="./img/products/8-1.jpg" alt=""></div>
+            
+              </div>
+              <div class="slider-nav">
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/1-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/2-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/3-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/4-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/5-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/6-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/7-1.jpg" alt=""></div></div>
+                <div class=slide-btn"><div class="slid-btn-inner"><img src="./img/products/8-1.jpg" alt=""></div></div>
+            
+              </div>
+            </div>
+            <!-- ......................right side of module.............. -->
+            <div class="col-xl-7 col-lg-6">
+              <div class="modul-r-content">
+                <div class="modul-r-heading">
+                  <h5><a href="#">Dolorem odio provident ut nihil</a></h5>
+                </div>
+                <div class="star-box">
+                  <ul>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                  </ul>
+                </div>
+                <div class="price-box">
+                  <span class="new-price new-price-2">$194.00</span>
+                  <span class="old-price">$241.00</span>
+                </div>
+                <div class="product-info">
+                  <ul>
+                    <li>Brands <a href="javascript:void(0)">Buxton</a></li>
+                    <li>
+                      Product Code:
+                      <a href="javascript:void(0)">Product 16</a>
+                    </li>
+                    <li>
+                      Reward Points: <a href="javascript:void(0)">100</a>
+                    </li>
+                    <li>
+                      Availability:
+                      <a href="javascript:void(0)">In Stock</a>
+                    </li>
+                    <li>
+                      EX Tax:
+                      <a href="javascript:void(0)"><span>$453.35</span></a>
+                    </li>
+                    <li>
+                      Price in reward points:
+                      <a href="javascript:void(0)">400</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="color-list_area">
+                  <div class="color-list_heading">
+                    <h4>Available Options</h4>
+                  </div>
+                  <span class="sub-title">Color</span>
+                  <div class="color-list">
+                    <a href="javascript:void(0)" class="color" data-color="./img/products/2-1.jpg">
+                      <span class="bg-red_color"></span>
+                      <span class="color-text">Red (+$150)</span>
+                    </a>
+                    <a href="javascript:void(0)" class="color" data-color="./img/products/2-1.jpg">
+                      <span class="burnt-orange_color"></span>
+                      <span class="color-text">Orange (+$170)</span>
+                    </a>
+                    <a href="javascript:void(0)" class="color" data-color="./img/products/3-1.jpg">
+                      <span class="brown_color"></span>
+                      <span class="color-text">Brown (+$120)</span>
+                    </a>
+                    <a href="javascript:void(0)" class="color active" data-color="./img/products/4-1.jpg">
+                      <span class="raw-umber_color"></span>
+                      <span class="color-text">Umber (+$125)</span>
+                    </a>
+                    <a href="javascript:void(0)" class="color" data-color="./img/products/5-1.jpg">
+                      <span class="black_color"></span>
+                      <span class="color-text">Black (+$125)</span>
+                    </a>
+                    <a href="javascript:void(0)" class="color" data-color="./img/products/6-1.jpg">
+                      <span class="golden_color"></span>
+                      <span class="color-text">Golden (+$125)</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="quantity">
+                  <label>Quantity</label>
+                  <div class="cart-plus-minus">
+                    <input class="cart-plus-minus-box" value="1" type="text">
+                    <div class="dec change">
+                      <i class="fa fa-angle-down"></i>
+                    </div>
+                    <div class="inc change">
+                      <i class="fa fa-angle-up"></i>
+                    </div>
+
+                </div>
+                </div>
+                <div class="add-to_cart_group">
+                  <ul>
+                    <li>
+                      <a href="#" class="add-to_cart">Add To Cart</a>
+                    </li>
+                    <li>
+                      <a href="#" class="heart"><i class="fa fa-heart"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tag-line">
+                  <h6>Tags:</h6>
+                  <a href="javascript:void(0)">Scraf</a>,
+                  <a href="javascript:void(0)">hoodie</a>,
+                  <a href="javascript:void(0)">jacket</a>
+                </div>
+                <div class="social_link">
+                  <ul>
+                    <li class="facebook">
+                      <a href="https://www.facebook.com" data-toggle="tooltip" target="_blank" title="" data-original-title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="twitter">
+                      <a href="https://twitter.com" data-toggle="tooltip" target="_blank" title="" data-original-title="Twitter">
+                        <i class="fab fa-twitter-square"></i>
+                      </a>
+                    </li>
+                    <li class="youtube">
+                      <a href="https://www.youtube.com" data-toggle="tooltip" target="_blank" title="" data-original-title="Youtube">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li class="google-plus">
+                      <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title="" data-original-title="Google Plus">
+                        <i class="fab fa-google-plus"></i>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+         
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- popper -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <!-- boots-tap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+ <!-- slick -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- <script src="./js/plugins/slick.imin.js"></script> -->
+  <!-- js file -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
