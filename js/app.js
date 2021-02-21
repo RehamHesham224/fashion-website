@@ -47,9 +47,9 @@ $(window).scroll(function () {
 
 //..............................loader....................................
 //.......................................................................
-//  window.addEventListener('load', function () {
-//     $('.preload').delay(2000).fadeOut('slow');
-//   });
+ window.addEventListener('load', function () {
+    $('.preload').delay(2000).fadeOut('slow');
+  });
 
 
 //........................js..............................................
